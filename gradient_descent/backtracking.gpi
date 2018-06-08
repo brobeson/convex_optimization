@@ -1,0 +1,9 @@
+# a thicker line for the prohibited portion of the curve
+set style line 1 linecolor rgbcolor "red" linewidth 2
+set xrange [-15:15]
+set yrange [0:225]
+plot x**2, \
+     20*x-100, \
+     8*x+20, \
+     [-15:-2] x**2 ls 1, \
+     [10:15] x**2 ls 1
