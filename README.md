@@ -1,2 +1,2 @@
-# convex_optimization
-Supplemental materials for studying convex optimization.
+# Convex Optimization
+My PhD research group is studying convex optimization. This repository contains supplementary materials and examples.
