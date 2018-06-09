@@ -1,0 +1,18 @@
+# This file contains data used for drawing the example graphs for gradient descent.
+
+# index 0
+# Sample points for gradient descent examples:
+#   x(k-1) = (10,  100)
+#   x(k)   = (-6,   36)
+#   x(k+1) = ( 3.6, 12.96)
+# x   y
+10   100
+-6    36
+ 3.6  12.96
+
+
+# index 1
+# Vectors showing the steps in descent_example.gpi
+# x y     dx      dy
+10  100  -16    -64
+-6   36    9.6  -23.04

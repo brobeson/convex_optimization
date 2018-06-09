@@ -1,0 +1,25 @@
+# This is an example of gradient descent. it graphs a function, and two iterations of gradient
+# descent. The function and values are:
+#
+#  f(x)   = x^2
+#  x(k-1) = 10
+#  x(k)   = -6
+#  x(k+1) =  3.6
+#  t      =  0.8
+#
+# The vectors show the steps.
+
+# limit the X axis to [-15, 15], and the Y axis to [0, 15^2]
+set xr [-15.0:15.0]
+set yr [0:225]
+
+# plot the function, the vectors showing the descent iterations, and the points x(k-1), x(k), and
+# x(k+1)
+plot x**2 title "f(x)=x^2", \
+    'points.data' index 1 title "Iterations" with vectors head filled, \
+    'points.data' index 0 title "" with points pointtype 5
+
+# label the 3 points
+set label 1 "x^{k-1}" at first 10,90
+set label 2 "x^k" at first -6,45
+set label 3 "x^{k+1}" at first 4,10
